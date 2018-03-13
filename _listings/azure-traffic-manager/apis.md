@@ -25,7 +25,7 @@ apis:
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/files/master/_listings/azure-traffic-manager/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-network-trafficmanagerprofiles-profilename-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/files/master/_listings/azure-traffic-manager/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-network-trafficmanagerprofiles-profilename-put.md
 x-common:
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/traffic-manager/
