@@ -20,8 +20,8 @@ tags:
 - Files
 - Collaboration
 - Backup
-created: "2018-03-10"
-modified: "2018-03-10"
+created: "2018-03-13"
+modified: "2018-03-13"
 url: https://raw.githubusercontent.com/streamdata-gallery/files/master/_listings/box/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -33,7 +33,7 @@ apis:
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/files/master/_listings/box/files-file-id-metadata-scope-template-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/files/master/_listings/box/files-content-options.md
 x-common:
 - type: x-base
   url: https://api.box.com/
