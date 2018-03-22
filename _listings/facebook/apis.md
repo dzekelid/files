@@ -22,9 +22,9 @@ tags:
 - Issues
 - Indie EdTech Data Jam
 - Facebook Stack
-created: "2018-03-13"
-modified: "2018-03-13"
-url: https://raw.githubusercontent.com/streamdata-gallery/files/master/_listings/facebook/apis.yaml
+created: "2018-03-21"
+modified: "2018-03-21"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/facebook/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Facebook
@@ -36,7 +36,7 @@ apis:
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/files/master/_listings/facebook/group-id-files-put.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/facebook/group-id-files-get.md
 x-common:
 - type: x-android-sdk
   url: https://developers.facebook.com/docs/android/share
