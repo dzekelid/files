@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=ListInstanceProfiles&k=1:
+  /?Action=ListInstanceProfiles:
     get:
       summary: ' List Instance Profiles '
       description: Lists the instance profiles that have the specified path prefix
