@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=ListInstanceProfilesForRole&k=1:
+  /?Action=ListInstanceProfilesForRole:
     get:
       summary: ' List Instance Profiles For Role '
       description: Lists the instance profiles that have the specified associated
