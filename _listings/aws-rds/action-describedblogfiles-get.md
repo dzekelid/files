@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DescribeDBLogFiles&k=1:
+  /?Action=DescribeDBLogFiles:
     get:
       summary: Describe D B Log Files
       description: Returns a list of DB log files for the DB instance
