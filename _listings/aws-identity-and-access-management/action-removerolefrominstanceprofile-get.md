@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=RemoveRoleFromInstanceProfile&k=1:
+  /?Action=RemoveRoleFromInstanceProfile:
     get:
       summary: ' Remove Role From Instance Profile '
       description: Removes the specified IAM role from the specified EC2 instance
