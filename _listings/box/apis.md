@@ -33,7 +33,7 @@ apis:
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-content-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-versions-get.md
 x-common:
 - type: x-base
   url: https://api.box.com/
