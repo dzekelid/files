@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=CreateLoginProfile&k=1:
+  /?Action=CreateLoginProfile:
     get:
       summary: ' Create Login Profile '
       description: |-
