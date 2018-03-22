@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=GetLoginProfile&k=1:
+  /?Action=GetLoginProfile:
     get:
       summary: ' Get Login Profile '
       description: Retrieves the user name and password-creation date for the specified
