@@ -16,9 +16,9 @@ tags:
 - Identity
 - Authentication
 - Amazon Web Services
-created: "2018-03-13"
-modified: "2018-03-13"
-url: https://raw.githubusercontent.com/streamdata-gallery/files/master/_listings/aws-identity-and-access-management/apis.yaml
+created: "2018-03-21"
+modified: "2018-03-21"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/aws-identity-and-access-management/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: AWS Identity and Access Management API
@@ -30,7 +30,7 @@ apis:
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/files/master/_listings/aws-identity-and-access-management/action-updateloginprofile-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/aws-identity-and-access-management/action-createinstanceprofile-get.md
 x-common:
 - type: x-change-log
   url: http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=323
