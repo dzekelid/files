@@ -13,9 +13,9 @@ x-kinRank: "10"
 x-alexaRank: ""
 tags:
 - Stack Network
-created: "2018-03-13"
-modified: "2018-03-13"
-url: https://raw.githubusercontent.com/streamdata-gallery/files/master/_listings/application-insights-dupe/apis.yaml
+created: "2018-03-21"
+modified: "2018-03-21"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/application-insights-dupe/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Application Insights API
@@ -27,7 +27,7 @@ apis:
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/files/master/_listings/application-insights-dupe/subscriptions-subscriptionid-providers-microsoft-insights-logprofiles-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/application-insights-dupe/subscriptions-subscriptionid-providers-microsoft-insights-logprofiles-logprofilename-delete.md
 x-common:
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/application-insights/
