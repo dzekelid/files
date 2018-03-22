@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DeleteLoginProfile&k=1:
+  /?Action=DeleteLoginProfile:
     get:
       summary: ' Delete Login Profile '
       description: |-
