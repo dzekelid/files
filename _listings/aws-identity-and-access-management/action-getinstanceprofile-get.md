@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=GetInstanceProfile&k=1:
+  /?Action=GetInstanceProfile:
     get:
       summary: ' Get Instance Profile '
       description: |-
