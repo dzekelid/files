@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=UpdateLoginProfile&k=1:
+  /?Action=UpdateLoginProfile:
     get:
       summary: ' Update Login Profile '
       description: Changes the password for the specified IAM user
