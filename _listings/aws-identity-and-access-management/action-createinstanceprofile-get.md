@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=CreateInstanceProfile&k=1:
+  /?Action=CreateInstanceProfile:
     get:
       summary: ' Create Instance Profile '
       description: Creates a new instance profile
