@@ -33,7 +33,7 @@ apis:
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/akamai/invoicing-api-v2-contracts-contractid-invoices-invoicenumber-files-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/akamai/invoicing-api-v2-contracts-contractid-products-productid-geo-billing-files-year,month,day-get.md
 x-common:
 - type: x-base
   url: https://api.ccu.akamai.com
