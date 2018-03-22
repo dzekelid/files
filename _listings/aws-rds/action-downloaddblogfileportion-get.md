@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DownloadDBLogFilePortion&k=1:
+  /?Action=DownloadDBLogFilePortion:
     get:
       summary: Download D B Log File Portion
       description: Downloads all or a portion of the specified log file, up to 1 MB
