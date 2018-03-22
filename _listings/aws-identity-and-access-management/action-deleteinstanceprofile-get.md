@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DeleteInstanceProfile&k=1:
+  /?Action=DeleteInstanceProfile:
     get:
       summary: ' Delete Instance Profile '
       description: Deletes the specified instance profile
