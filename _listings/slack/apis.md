@@ -39,7 +39,7 @@ apis:
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/slack/files-comments-edit-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/slack/files-upload-post.md
 x-common:
 - type: x-application-gallery
   url: https://slack.com/apps
