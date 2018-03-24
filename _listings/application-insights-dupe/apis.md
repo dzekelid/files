@@ -27,7 +27,7 @@ apis:
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/application-insights-dupe/subscriptions-subscriptionid-providers-microsoft-insights-logprofiles-logprofilename-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/application-insights-dupe/subscriptions-subscriptionid-providers-microsoft-insights-logprofiles-logprofilename-get.md
 x-common:
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/application-insights/
