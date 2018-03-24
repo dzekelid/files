@@ -36,7 +36,7 @@ apis:
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/facebook/group-id-files-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/facebook/group-id-files-post.md
 x-common:
 - type: x-android-sdk
   url: https://developers.facebook.com/docs/android/share
