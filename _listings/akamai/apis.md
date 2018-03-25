@@ -20,20 +20,11 @@ tags:
 - Bots
 - Applications
 - API LIfeycle
-created: "2018-03-23"
-modified: "2018-03-23"
+created: "2018-03-24"
+modified: "2018-03-24"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/akamai/apis.yaml
 specificationVersion: "0.14"
-apis:
-- name: Akamai API
-  description: Akamai Technologies, Inc
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Akamai_Technologies,_Inc._Logo.png
-  humanURL: ""
-  baseURL: https:///
-  tags: Files
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/akamai/invoicing-api-v2-contracts-contractid-products-productid-geo-billing-files-year,month,day-get.md
+apis: []
 x-common:
 - type: x-base
   url: https://api.ccu.akamai.com
