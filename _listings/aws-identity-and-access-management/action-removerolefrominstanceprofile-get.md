@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Identity and Access Management API
+  title: AWS Identity and Access Management API Remove Role From Instance Profile
   version: 1.0.0
+  description: Removes the specified IAM role from the specified EC2 instance profile.
 schemes:
 - http
 produces:
