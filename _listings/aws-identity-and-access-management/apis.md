@@ -31,15 +31,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/aws-identity-and-access-management/action-updateloginprofile-get.md
-- name: AWS Identity and Access Management API List Instance Profiles
-  description: Lists the instance profiles that have the specified path prefix.
+- name: AWS Identity and Access Management API List Instance Profiles For Role
+  description: Lists the instance profiles that have the specified associated IAM
+    role.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Security-Identity_AWSIAM.png
   humanURL: https://aws.amazon.com/iam/
   baseURL: http:://{host}//
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/aws-identity-and-access-management/action-listinstanceprofiles-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/aws-identity-and-access-management/action-listinstanceprofilesforrole-get.md
 x-common:
 - type: x-change-log
   url: http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=323
