@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: TrafficManagerManagementClient
+  title: Azure Traffic Manager API Profiles Update
   version: 1.0.0
+  description: Update a Traffic Manager profile.
 host: management.azure.com
 basePath: /
 schemes:
