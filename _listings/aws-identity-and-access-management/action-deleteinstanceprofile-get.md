@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Identity and Access Management API
+  title: AWS Identity and Access Management API Delete Instance Profile
   version: 1.0.0
+  description: Deletes the specified instance profile.
 schemes:
 - http
 produces:
