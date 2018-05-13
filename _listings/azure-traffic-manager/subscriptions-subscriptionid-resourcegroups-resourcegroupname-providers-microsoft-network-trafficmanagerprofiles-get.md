@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: TrafficManagerManagementClient
+  title: Azure Traffic Manager API Profiles List By In Resource Group
   version: 1.0.0
+  description: Lists all Traffic Manager profiles within a resource group.
 host: management.azure.com
 basePath: /
 schemes:
