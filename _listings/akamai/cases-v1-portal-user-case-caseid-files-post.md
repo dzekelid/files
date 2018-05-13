@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Akamai Merged API
+  title: Akamai API Upload a File Attachment
+  description: Upload a File Attachment
   version: 1.0.0
+host: developer.akamai.com
+basePath: /
 schemes:
 - http
 produces:
@@ -16,7 +19,7 @@ paths:
       description: Upload a File Attachment
       operationId: casesv1portalusercasecaseidfiles
       parameters:
-      - in: String
+      - in: query
         name: caseId
         description: Unique identifier for the support ticket
         type: string
