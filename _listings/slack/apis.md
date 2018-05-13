@@ -40,17 +40,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/slack/files-comments-add-post.md
-- name: Slack Share Public URL
-  description: Enables a file for public/external sharing.
+- name: Slack Add File Comments
+  description: Add a comment to an existing file.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/slack-logo.png
   humanURL: https://slack.com
   baseURL: https://slack.com//api
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/slack/files-sharedpublicurl-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/slack/files-comments-add-post.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/slack/files-sharedpublicurl-post-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/slack/files-comments-add-post-postman.md
 x-common:
 - type: x-application-gallery
   url: https://slack.com/apps
