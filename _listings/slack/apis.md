@@ -40,17 +40,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/slack/files-comments-add-post.md
-- name: Slack List Files
-  description: Lists & filters team files.
+- name: Slack Delete File
+  description: Deletes a file.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/slack-logo.png
   humanURL: https://slack.com
   baseURL: https://slack.com//api
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/slack/files-list-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/slack/files-delete-post.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/slack/files-list-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/slack/files-delete-post-postman.md
 x-common:
 - type: x-application-gallery
   url: https://slack.com/apps
