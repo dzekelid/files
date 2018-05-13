@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS RDS API
+  title: Amazon RDS API Download D B Log File Portion
   version: 1.0.0
+  description: Downloads all or a portion of the specified log file, up to 1 MB in
+    size.
 schemes:
 - http
 produces:
