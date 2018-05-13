@@ -1,11 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: Box
-  description: The Box Content API gives you access to secure content management and
-    content experience features for use in your own app. It strives to be RESTful
-    and is organized around the main resources you&rsquo;re familiar with from the
-    Box web interface.
+  title: Box Create Metadata on File
+  description: Used to create the metadata template instance for a corresponding Box
+    file. When creating metadata, only values that adhere to the metadata template
+    schema will be accepted.
   version: 1.0.0
 host: api.box.com
 basePath: /2.0
