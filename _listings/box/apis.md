@@ -34,18 +34,19 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-metadata-scope-template-delete.md
-- name: Box Delete File
-  description: "Discards a file to the trash. The etag of the file can be included
-    as an \u2018If-Match\u2019 header to prevent race conditions."
+- name: Box Restore Item
+  description: Restores an item that has been moved to the trash. Default behavior
+    is to restore the item to the folder it was in before it was moved to the trash.
+    If that parent folder no longer exists or if there is now an item with the same
+    name in that parent folder, the new parent folder and/or new name will need to
+    be included in the request.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/box1200x630.jpg
   humanURL: http://box.com
   baseURL: https://api.box.com//2.0
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-delete.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-delete-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-post.md
 x-common:
 - type: x-base
   url: https://api.box.com/
