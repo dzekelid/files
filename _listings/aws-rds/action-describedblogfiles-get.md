@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS RDS API
+  title: Amazon RDS API Describe D B Log Files
   version: 1.0.0
+  description: Returns a list of DB log files for the DB instance.
 schemes:
 - http
 produces:
