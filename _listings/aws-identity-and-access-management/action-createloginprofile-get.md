@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Identity and Access Management API
+  title: AWS Identity and Access Management API Create Login Profile
   version: 1.0.0
+  description: |-
+    Creates a password for the specified user, giving the user the ability to access AWS
+          services through the AWS Management Console.
 schemes:
 - http
 produces:
