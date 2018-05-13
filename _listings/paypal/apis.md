@@ -35,8 +35,8 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/paypal/permissions-getbasicpersonaldata-post.md
-- name: Paypal Get Advanced Personal Data
-  description: Use the GetAdvancedPersonalData API operation to obtain sensitive personal
+- name: Paypal Get Basic Personal Data
+  description: Use the GetBasicPersonalData API operation to obtain basic personal
     data for an account holder.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/paypal-logo.png
   humanURL: https://paypal.com
@@ -44,7 +44,7 @@ apis:
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/paypal/permissions-getadvancedpersonaldata-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/paypal/permissions-getbasicpersonaldata-post.md
 x-common:
 - type: x-base-url
   url: https://api.paypal.com
