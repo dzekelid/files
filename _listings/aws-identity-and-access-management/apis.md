@@ -31,17 +31,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/aws-identity-and-access-management/action-updateloginprofile-get.md
-- name: AWS Identity and Access Management API Create Login Profile
-  description: |-
-    Creates a password for the specified user, giving the user the ability to access AWS
-          services through the AWS Management Console.
+- name: AWS Identity and Access Management API Delete Instance Profile
+  description: Deletes the specified instance profile.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Security-Identity_AWSIAM.png
   humanURL: https://aws.amazon.com/iam/
   baseURL: http:://{host}//
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/aws-identity-and-access-management/action-createloginprofile-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/aws-identity-and-access-management/action-deleteinstanceprofile-get.md
 x-common:
 - type: x-change-log
   url: http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=323
