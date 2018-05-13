@@ -1,11 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: Box
-  description: The Box Content API gives you access to secure content management and
-    content experience features for use in your own app. It strives to be RESTful
-    and is organized around the main resources you&rsquo;re familiar with from the
-    Box web interface.
+  title: Box Get File's Collaborations
+  description: Use this to get a list of all the collaborations on a file
   version: 1.0.0
 host: api.box.com
 basePath: /2.0
@@ -356,16 +353,16 @@ definitions:
         type: delete
 x-collection-name: Box
 x-streamrank:
-  polling_total_time_average: 0
-  polling_size_download_average: 0
-  streaming_total_time_average: 0
-  streaming_size_download_average: 0
-  change_yes: 0
-  change_no: 0
-  time_percentage: 0
-  size_percentage: 0
-  change_percentage: 0
-  last_run: ""
-  days_run: 0
-  minute_run: 0
+  polling_total_time_average: ~
+  polling_size_download_average: ~
+  streaming_total_time_average: ~
+  streaming_size_download_average: ~
+  change_yes: ~
+  change_no: ~
+  time_percentage: ~
+  size_percentage: ~
+  change_percentage: "200"
+  last_run: ~
+  days_run: ~
+  minute_run: ~
 ---
