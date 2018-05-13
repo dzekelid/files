@@ -1,11 +1,12 @@
 ---
 swagger: "2.0"
 info:
-  title: Box
-  description: The Box Content API gives you access to secure content management and
-    content experience features for use in your own app. It strives to be RESTful
-    and is organized around the main resources you&rsquo;re familiar with from the
-    Box web interface.
+  title: Box Restore Item
+  description: Restores an item that has been moved to the trash. Default behavior
+    is to restore the item to the folder it was in before it was moved to the trash.
+    If that parent folder no longer exists or if there is now an item with the same
+    name in that parent folder, the new parent folder and/or new name will need to
+    be included in the request.
   version: 1.0.0
 host: api.box.com
 basePath: /2.0
