@@ -34,17 +34,18 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-metadata-scope-template-delete.md
-- name: Box Get Trashed File
-  description: Retrieves an item that has been moved to the trash.
+- name: Box Permanently Delete
+  description: Permanently deletes an item that is in the trash. The item will no
+    longer exist in Box. This action cannot be undone.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/box1200x630.jpg
   humanURL: http://box.com
   baseURL: https://api.box.com//2.0
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-trash-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-trash-delete.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-trash-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-trash-delete-postman.md
 x-common:
 - type: x-base
   url: https://api.box.com/
