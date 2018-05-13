@@ -1,11 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: Box
-  description: The Box Content API gives you access to secure content management and
-    content experience features for use in your own app. It strives to be RESTful
-    and is organized around the main resources you&rsquo;re familiar with from the
-    Box web interface.
+  title: Box Update Metadata on File
+  description: |-
+    Used to update the template instance. The request body must follow the JSON-Patch specification, which is represented as a JSON array of operation objects (see examples for more details). Updates can be either add, replace, remove , test, move, or copy. The template instance can only be updated if the template instance already exists. When editing metadata, only values that adhere to the metadata template schema will be accepted.
+    The update is applied atomically. If any errors occur during the application of the update operations, the metadata instance remains unchanged.
   version: 1.0.0
 host: api.box.com
 basePath: /2.0
