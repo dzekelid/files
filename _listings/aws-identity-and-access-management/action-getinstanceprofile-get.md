@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Identity and Access Management API
+  title: AWS Identity and Access Management API Get Instance Profile
   version: 1.0.0
+  description: |-
+    Retrieves information about the specified instance profile, including the instance
+          profile's path, GUID, ARN, and role.
 schemes:
 - http
 produces:
