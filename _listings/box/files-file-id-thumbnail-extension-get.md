@@ -1,11 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Box
-  description: The Box Content API gives you access to secure content management and
-    content experience features for use in your own app. It strives to be RESTful
-    and is organized around the main resources you&rsquo;re familiar with from the
-    Box web interface.
+  title: Box Get Thumbnail
+  description: Retrieves a thumbnail, or smaller image representation, of this file.
+    Sizes of 32x32,64x64, 128x128, and 256x256 can be returned in the .png format
+    and sizes of 32x32, 94x94, 160x160, and 320x320 can be returned in the .jpg format.
+    Thumbnails can be generated for the image and video file formats listed here.
   version: 1.0.0
 host: api.box.com
 basePath: /2.0
