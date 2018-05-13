@@ -31,16 +31,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/aws-identity-and-access-management/action-updateloginprofile-get.md
-- name: AWS Identity and Access Management API Get Login Profile
-  description: Retrieves the user name and password-creation date for the specified
-    IAM user.
+- name: AWS Identity and Access Management API List Instance Profiles
+  description: Lists the instance profiles that have the specified path prefix.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Security-Identity_AWSIAM.png
   humanURL: https://aws.amazon.com/iam/
   baseURL: http:://{host}//
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/aws-identity-and-access-management/action-getloginprofile-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/aws-identity-and-access-management/action-listinstanceprofiles-get.md
 x-common:
 - type: x-change-log
   url: http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=323
