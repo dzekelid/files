@@ -1,11 +1,13 @@
 ---
 swagger: "2.0"
 info:
-  title: Box
-  description: The Box Content API gives you access to secure content management and
-    content experience features for use in your own app. It strives to be RESTful
-    and is organized around the main resources you&rsquo;re familiar with from the
-    Box web interface.
+  title: Box Promote Version
+  description: If there are previous versions of this file, this method can be used
+    to promote one of the older versions to the top of the stack. This actually mints
+    a copy of the old version and puts it on the top of the versions stack. The file
+    will have the exact same contents, the same SHA1/etag, and the same name as the
+    original. Other properties such as comments do not get updated to their former
+    values.
   version: 1.0.0
 host: api.box.com
 basePath: /2.0
