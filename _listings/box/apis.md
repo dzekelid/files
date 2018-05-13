@@ -34,20 +34,19 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-metadata-scope-template-delete.md
-- name: Box Promote Version
-  description: If there are previous versions of this file, this method can be used
-    to promote one of the older versions to the top of the stack. This actually mints
-    a copy of the old version and puts it on the top of the versions stack. The file
-    will have the exact same contents, the same SHA1/etag, and the same name as the
-    original. Other properties such as comments do not get updated to their former
-    values.
+- name: Box Delete Old Version
+  description: Discards a specific file version to the trash. (Depending on the enterprise
+    settings for this user, the item will either be actually deleted from Box or moved
+    to the trash.)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/box1200x630.jpg
   humanURL: http://box.com
   baseURL: https://api.box.com//2.0
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-versions-current-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-versions-version-id-delete.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-versions-version-id-delete-postman.md
 x-common:
 - type: x-base
   url: https://api.box.com/
