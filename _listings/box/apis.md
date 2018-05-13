@@ -34,19 +34,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-metadata-scope-template-delete.md
-- name: Box Delete Old Version
-  description: Discards a specific file version to the trash. (Depending on the enterprise
-    settings for this user, the item will either be actually deleted from Box or moved
-    to the trash.)
+- name: Box Copy File
+  description: Used to create a copy of a file in another folder. The original version
+    of the file will not be altered.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/box1200x630.jpg
   humanURL: http://box.com
   baseURL: https://api.box.com//2.0
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-versions-version-id-delete.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-versions-version-id-delete-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-copy-post.md
 x-common:
 - type: x-base
   url: https://api.box.com/
