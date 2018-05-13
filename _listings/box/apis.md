@@ -34,16 +34,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-metadata-scope-template-delete.md
-- name: Box File upload preflight check
-  description: The Pre-flight check API will verify that a file will be accepted by
-    Box before you send all the bytes over the wire.
+- name: Box Get File's Info, Get Embed Link
+  description: Used to retrieve the metadata about a file.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/box1200x630.jpg
   humanURL: http://box.com
   baseURL: https://api.box.com//2.0
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-content-options.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-get-postman.md
 x-common:
 - type: x-base
   url: https://api.box.com/
