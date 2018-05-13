@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Identity and Access Management API
+  title: AWS Identity and Access Management API Delete Login Profile
   version: 1.0.0
+  description: |-
+    Deletes the password for the specified IAM user, which terminates the user's ability
+          to access AWS services through the AWS Management Console.
 schemes:
 - http
 produces:
