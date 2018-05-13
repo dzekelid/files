@@ -34,18 +34,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-metadata-scope-template-delete.md
-- name: Box Get Metadata on File
-  description: Used to retrieve the metadata template instance for a corresponding
-    Box file.
+- name: Box Update Metadata on File
+  description: |-
+    Used to update the template instance. The request body must follow the JSON-Patch specification, which is represented as a JSON array of operation objects (see examples for more details). Updates can be either add, replace, remove , test, move, or copy. The template instance can only be updated if the template instance already exists. When editing metadata, only values that adhere to the metadata template schema will be accepted.
+    The update is applied atomically. If any errors occur during the application of the update operations, the metadata instance remains unchanged.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/box1200x630.jpg
   humanURL: http://box.com
   baseURL: https://api.box.com//2.0
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-metadata-scope-template-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-metadata-scope-template-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-metadata-scope-template-put.md
 x-common:
 - type: x-base
   url: https://api.box.com/
