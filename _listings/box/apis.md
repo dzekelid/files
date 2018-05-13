@@ -34,16 +34,20 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-metadata-scope-template-delete.md
-- name: Box Copy File
-  description: Used to create a copy of a file in another folder. The original version
-    of the file will not be altered.
+- name: Box Get Thumbnail
+  description: Retrieves a thumbnail, or smaller image representation, of this file.
+    Sizes of 32x32,64x64, 128x128, and 256x256 can be returned in the .png format
+    and sizes of 32x32, 94x94, 160x160, and 320x320 can be returned in the .jpg format.
+    Thumbnails can be generated for the image and video file formats listed here.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/box1200x630.jpg
   humanURL: http://box.com
   baseURL: https://api.box.com//2.0
   tags: Files
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-copy-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-thumbnail-extension-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/box/files-file-id-thumbnail-extension-get-postman.md
 x-common:
 - type: x-base
   url: https://api.box.com/
