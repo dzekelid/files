@@ -1,23 +1,56 @@
 ---
 name: Mattermost
+x-slug: mattermost
 description: Open source, private cloud Slack-alternative, Workplace messaging for
   web, PCs and phones. MIT-licensed. Hundreds of contributors. 14 languages. Secure,
   configurable, and scalable from teams to the enterprise.
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/mattermost-logo.png
 x-kinRank: "8"
 x-alexaRank: "95684"
-tags:
-- Technology
-- SaaS
-- New
-- Networking
-- Enterprise
-- Cloud
-created: "2018-05-13"
-modified: "2018-05-13"
+tags: Files
+created: "2018-06-18"
+modified: "2018-06-18"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/mattermost/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: Mattermost API Get a files thumbnail
+  x-api-slug: mattermost-api
+  description: |-
+    Gets a file's thumbnail.
+    ##### Permissions
+    Must have `read_channel` permission or be uploader of the file.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/mattermost-logo.png
+  humanURL: https://mattermost.com
+  baseURL: https://your-mattermost-url.com//api/v4//files/{file_id}/thumbnail
+  tags: Files,Thumbnail
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/mattermost/filesfile-idthumbnail-get-openapi.md
+- name: Mattermost API Get a files preview
+  x-api-slug: mattermost-api
+  description: |-
+    Gets a file's preview.
+    ##### Permissions
+    Must have `read_channel` permission or be uploader of the file.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/mattermost-logo.png
+  humanURL: https://mattermost.com
+  baseURL: https://your-mattermost-url.com//api/v4//files/{file_id}/preview
+  tags: Files,Preview
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/mattermost/filesfile-idpreview-get-openapi.md
+- name: Mattermost API
+  x-api-slug: mattermost-api
+  description: Open source, private cloud Slack-alternative, Workplace messaging for
+    web, PCs and phones. MIT-licensed. Hundreds of contributors. 14 languages. Secure,
+    configurable, and scalable from teams to the enterprise.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/mattermost-logo.png
+  humanURL: https://mattermost.com
+  baseURL: https://your-mattermost-url.com//api/v4
+  tags: Files
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/mattermost/openapi.md
 x-common:
 - type: x-blog
   url: https://about.mattermost.com/blog/
