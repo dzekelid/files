@@ -7,13 +7,13 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbo
 x-kinRank: "10"
 x-alexaRank: "89"
 tags: Files
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Dropbox Content Downloads a file.
-  x-api-slug: dropbox-content
+- name: Dropbox Content API v1 - Downloads a file.
+  x-api-slug: filesrootpath-get
   description: |-
     Downloads a file.
 
@@ -21,15 +21,17 @@ apis:
     to allow retrieving partial file contents.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
   humanURL: http://dropbox.com
-  baseURL: https://api-content.dropbox.com//1//files/{root}/{path}
-  tags: Storage,Documents,Files,Root,Path
+  baseURL: https://api-content.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/filesrootpath-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/filesrootpath-get-openapi.md
-- name: Dropbox Content Uploads a file using PUT semantics.
-  x-api-slug: dropbox-content
+- name: Dropbox Content API v1 - Uploads a file using PUT semantics.
+  x-api-slug: files-putrootpath-post
   description: |-
     Uploads a file using PUT semantics.
 
@@ -42,68 +44,267 @@ apis:
     **Note:** `/files_put` has a maximum file size limit of 150 MB and does not support uploads with chunked
     encoding. To upload larger files, use [/chunked_upload](https://www.dropbox.com/developers/core/docs#chunked-upload)
     instead.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: http://dropbox.com
-  baseURL: https://api-content.dropbox.com//1//files_put/{root}/{path}
-  tags: Storage,Documents,Files,Put,Root,Path
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/files-putrootpath-post-openapi.md
-- name: Dropbox Content Uploads a file using PUT semantics.
-  x-api-slug: dropbox-content
-  description: |-
-    Uploads a file using PUT semantics.
-
-    The preferred HTTP method for this call is **PUT**. For compatibility with browser environments, the **POST**
-    HTTP method is also recognized.
-
-    **Note:** Providing a `Content-Length` header set to the size of the uploaded file is required so that the
-    server can verify that it has received the entire file contents.
-
-    **Note:** `/files_put` has a maximum file size limit of 150 MB and does not support uploads with chunked
-    encoding. To upload larger files, use [/chunked_upload](https://www.dropbox.com/developers/core/docs#chunked-upload)
-    instead.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: http://dropbox.com
-  baseURL: https://api-content.dropbox.com//1//files_put/{root}/{path}
-  tags: Storage,Documents,Files,Put,Root,Path
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/files-putrootpath-put-openapi.md
-- name: Dropbox Content
-  x-api-slug: dropbox-content
-  description: Dropbox is a modern workspace designed to reduce busywork-so you can
-    focus on the things that matter. Sign in and put your creative energy to work.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
   humanURL: http://dropbox.com
   baseURL: https://api-content.dropbox.com//1
-  tags: Files
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/openapi.md
-- name: Dropbox Datastore API Get File
-  x-api-slug: dropbox-datastore-api
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/files-putrootpath-post-openapi.md
+- name: Dropbox Content API v1 - Uploads a file using PUT semantics.
+  x-api-slug: files-putrootpath-put
+  description: |-
+    Uploads a file using PUT semantics.
+
+    The preferred HTTP method for this call is **PUT**. For compatibility with browser environments, the **POST**
+    HTTP method is also recognized.
+
+    **Note:** Providing a `Content-Length` header set to the size of the uploaded file is required so that the
+    server can verify that it has received the entire file contents.
+
+    **Note:** `/files_put` has a maximum file size limit of 150 MB and does not support uploads with chunked
+    encoding. To upload larger files, use [/chunked_upload](https://www.dropbox.com/developers/core/docs#chunked-upload)
+    instead.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api-content.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/files-putrootpath-put-openapi.md
+- name: Dropbox Core API v1 - Copies a file or folder to a new location.
+  x-api-slug: fileopscopy-post
+  description: Copies a file or folder to a new location.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscopy-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscopy-post-openapi.md
+- name: Dropbox Core API v1 - Creates a folder.
+  x-api-slug: fileopscreate-folder-post
+  description: Creates a folder.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscreate-folder-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscreate-folder-post-openapi.md
+- name: Dropbox Core API v1 - Deletes a file or folder.
+  x-api-slug: fileopsdelete-post
+  description: Deletes a file or folder.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopsdelete-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopsdelete-post-openapi.md
+- name: Dropbox Core API v1 - Moves a file or folder to a new location.
+  x-api-slug: fileopsmove-post
+  description: Moves a file or folder to a new location.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopsmove-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopsmove-post-openapi.md
+- name: Dropbox Core API v1 - Copies a file or folder to a new location.
+  x-api-slug: fileopscopy-post
+  description: Copies a file or folder to a new location.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscopy-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscopy-post-openapi.md
+- name: Dropbox Core API v1 - Creates a folder.
+  x-api-slug: fileopscreate-folder-post
+  description: Creates a folder.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscreate-folder-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscreate-folder-post-openapi.md
+- name: Dropbox Core API v1 - Deletes a file or folder.
+  x-api-slug: fileopsdelete-post
+  description: Deletes a file or folder.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopsdelete-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopsdelete-post-openapi.md
+- name: Dropbox Core API v1 - Moves a file or folder to a new location.
+  x-api-slug: fileopsmove-post
+  description: Moves a file or folder to a new location.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopsmove-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopsmove-post-openapi.md
+- name: Dropbox Core API v1 - Moves a file or folder to a new location.
+  x-api-slug: fileopsmove-post
+  description: Moves a file or folder to a new location.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopsmove-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopsmove-post-openapi.md
+- name: Dropbox Core API v1 - Deletes a file or folder.
+  x-api-slug: fileopsdelete-post
+  description: Deletes a file or folder.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopsdelete-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopsdelete-post-openapi.md
+- name: Dropbox Core API v1 - Creates a folder.
+  x-api-slug: fileopscreate-folder-post
+  description: Creates a folder.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscreate-folder-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscreate-folder-post-openapi.md
+- name: Dropbox Core API v1 - Copies a file or folder to a new location.
+  x-api-slug: fileopscopy-post
+  description: Copies a file or folder to a new location.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscopy-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscopy-post-openapi.md
+- name: Dropbox - Get File
+  x-api-slug: files-get
   description: /files (GET)
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
   humanURL: http://dropbox.com
-  baseURL: https://api.dropbox.com//1//files
-  tags: Files
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/files-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/files-get-openapi.md
-- name: Dropbox Datastore API
-  x-api-slug: dropbox-datastore-api
-  description: Keep your apps structured data in sync with Dropbox
+- name: Dropbox - Create Folder
+  x-api-slug: fileopscreate-folder-post
+  description: /fileops/create_folder
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
   humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1
-  tags: Files
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscreate-folder-post-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscreate-folder-post-openapi.md
+- name: Dropbox - Create Folder
+  x-api-slug: fileopscreate-folder-post
+  description: /fileops/create_folder
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscreate-folder-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscreate-folder-post-openapi.md
+- name: Dropbox - Create Folder
+  x-api-slug: fileopscreate-folder-post
+  description: /fileops/create_folder
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscreate-folder-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/dropbox/fileopscreate-folder-post-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://donorschoose.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://dropbox.stack.network
 - type: x-application-management
   url: https://www.dropbox.com/developers/apps
 - type: x-base

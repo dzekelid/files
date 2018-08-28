@@ -7,56 +7,46 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "9"
 x-alexaRank: "383974"
 tags: Files
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/xignite/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Xignite Global Currencies File Get File
-  x-api-slug: xignite-global-currencies-file
+- name: Xignite Global Currencies File - Get File
+  x-api-slug: getfile-get
   description: Get File
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
-  baseURL: https://cloudfiles.xignite.com/xGlobalCurrenciesFile.json/XigniteGlobalCurrenciesFile//GetFile
-  tags: Market Data,Files
+  baseURL: https://cloudfiles.xignite.com/xGlobalCurrenciesFile.json/XigniteGlobalCurrenciesFile
+  tags: Trading, Government, Charts, Bond Markets, Energy, Jobs, JavaScript, Markets,
+    Realestate, Logos, Business, Economic, Markets, Articles, Business, Utility, Statistics,
+    Transcripts, Finance, Finance, Financial News API, Getting Started Example, Stack
+    Network, SaaS, Technology, Enterprise, Financial, Market Data, Financial Services,
+    SDIO Partner, Currencies, Publish, General Data, Service API, Pedestal
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/xignite/getfile-get-openapi.md
-- name: Xignite Global Currencies File
-  x-api-slug: xignite-global-currencies-file
-  description: Financial market data on-demand. Xignite financial Web services help
-    build smarter websites and applications in minutes with zero up-front investment.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
-  humanURL: http://www.xignite.com
-  baseURL: https://cloudfiles.xignite.com/xGlobalCurrenciesFile.json/XigniteGlobalCurrenciesFile
-  tags: Files
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/xignite/openapi.md
-- name: Xignite Global Options File Get File
-  x-api-slug: xignite-global-options-file
+- name: Xignite Global Options File - Get File
+  x-api-slug: getfile-get
   description: Get file
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
-  baseURL: https://cloudfiles.xignite.com/xGlobalOptionsFile.json/XigniteGlobalOptionsFile//GetFile
-  tags: Files
+  baseURL: https://cloudfiles.xignite.com/xGlobalOptionsFile.json/XigniteGlobalOptionsFile
+  tags: Trading, Government, Charts, Bond Markets, Energy, Jobs, JavaScript, Markets,
+    Realestate, Logos, Business, Economic, Markets, Articles, Business, Utility, Statistics,
+    Transcripts, Finance, Finance, Financial News API, Getting Started Example, Stack
+    Network, SaaS, Technology, Enterprise, Financial, Market Data, Financial Services,
+    SDIO Partner, Currencies, Publish, General Data, Service API, Pedestal
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/xignite/getfile-get-openapi.md
-- name: Xignite Global Options File
-  x-api-slug: xignite-global-options-file
-  description: Financial market data on-demand. Xignite financial Web services help
-    build smarter websites and applications in minutes with zero up-front investment.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
-  humanURL: http://www.xignite.com
-  baseURL: https://cloudfiles.xignite.com/xGlobalOptionsFile.json/XigniteGlobalOptionsFile
-  tags: Files
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/xignite/openapi.md
 x-common:
 - type: x--net-sdk
   url: http://xignite.github.io/DotNetSDK/
+- type: x-api-gallery
+  url: http://xibo.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://xignite.stack.network
 - type: x-base
   url: http://globalmaster.xignite.com
 - type: x-case-studies

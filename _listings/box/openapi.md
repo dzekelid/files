@@ -1,10 +1,8 @@
----
 swagger: "2.0"
 x-collection-name: Box
 x-complete: 1
 info:
   title: Box
-  description: the-box-content-api-gives-you-access-to-secure-content-management-and-content-experience-features-for-use-in-your-own-app--it-strives-to-be-restful-and-is-organized-around-the-main-resources-youre-familiar-with-from-the-box-web-interface-
   version: 1.0.0
 host: api.box.com
 basePath: /2.0
@@ -72,8 +70,8 @@ paths:
         name: FILE_ID
       - in: header
         name: If-Match
-        description: The etag of the file can be included as an If-Match header to
-          prevent race conditions
+        description: The etag of the file can be included as an ???If-Match??? header
+          to prevent race conditions
       responses:
         200:
           description: OK
@@ -83,8 +81,8 @@ paths:
       - File
     delete:
       summary: Delete File
-      description: "Discards a file to the trash. The etag of the file can be included
-        as an \u2018If-Match\u2019 header to prevent race conditions."
+      description: Discards a file to the trash. The etag of the file can be included
+        as an ???If-Match??? header to prevent race conditions.
       operationId: deleteFile
       x-api-path-slug: filesfile-id-delete
       parameters:
@@ -577,4 +575,3 @@ paths:
       - Metadata
       - Scope
       - Template
----

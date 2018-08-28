@@ -53,12 +53,6 @@ paths:
         description: The maximum number of records to include in the response
         type: string
       responses:
-        '400: for badly-formed requests, e.g. missing or invalid parameters':
-          description: ""
-        '403: for authentication issues':
-          description: ""
-        '409: for issues where the request is well-formed but cannot be completed':
-          description: ""
         200:
           description: OK
       tags:

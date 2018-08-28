@@ -72,6 +72,71 @@ paths:
       - Sharename
       - Fileid
       - Blob
+  /1/files/{sharename}/{fileid}/blob/thumb:
+    get:
+      summary: Files  Blob Thumb
+      description: Will redirect to a thumbnail of the binary file. Currently only
+        available for images.
+      operationId: get1FilesSharenameFileBlobThumb
+      x-api-path-slug: 1filessharenamefileidblobthumb-get
+      parameters:
+      - in: path
+        name: fileid
+      - in: path
+        name: sharename
+      responses:
+        200:
+          description: OK
+      tags:
+      - Files
+      - Sharename
+      - Fileid
+      - Blob
+      - Thumb
+  /1/files/{sharename}/{fileid}/destroy:
+    post:
+      summary: Files  Destroy
+      description: Delete a file and the binary contents.
+      operationId: post1FilesSharenameFileDestroy
+      x-api-path-slug: 1filessharenamefileiddestroy-post
+      parameters:
+      - in: query
+        name: accesstoken
+      - in: path
+        name: fileid
+      - in: path
+        name: sharename
+      responses:
+        200:
+          description: OK
+      tags:
+      - Files
+      - Sharename
+      - Fileid
+      - Destroy
+  /1/files/{sharename}/{fileid}/upload:
+    get:
+      summary: Files  Upload
+      description: Get upload urls to the file. This returns a new PUT and POST url
+        for you to upload the file to.nOBS You can also choose to use the put- or
+        posturl that you were previously given to override the file.
+      operationId: get1FilesSharenameFileUpload
+      x-api-path-slug: 1filessharenamefileidupload-get
+      parameters:
+      - in: query
+        name: accesstoken
+      - in: path
+        name: fileid
+      - in: path
+        name: sharename
+      responses:
+        200:
+          description: OK
+      tags:
+      - Files
+      - Sharename
+      - Fileid
+      - Upload
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

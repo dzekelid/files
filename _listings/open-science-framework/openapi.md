@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Open Science Framework
 x-complete: 1
@@ -405,4 +404,3 @@ paths:
       - Files
       - Provider
       - Path
----

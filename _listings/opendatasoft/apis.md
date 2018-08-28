@@ -9,35 +9,27 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2716-opend
 x-kinRank: "7"
 x-alexaRank: "323884"
 tags: Files
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/opendatasoft/apis.md
 specificationVersion: "0.14"
 apis:
-- name: OpenDataSoft Get Source Datasets Dataset Files File
-  x-api-slug: opendatasoft
+- name: OpenDataSoft - Get Source Datasets Dataset Files File
+  x-api-slug: sourcedatasetsdataset-idfilesfile-id-get
   description: Download file
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2716-opendatasoft.jpg
   humanURL: http://opendatasoft.com
-  baseURL: https://public.opendatasoft.com//api/v2//{source}/datasets/{dataset_id}/files/{file_id}
-  tags: Source,Datasets,Dataset,Id,Files,File,Id
+  baseURL: https://public.opendatasoft.com//api/v2
+  tags: Data, Government, Technology, SaaS, Enterprise, Relative Data, General Data,
+    Service API, Relative StreamRank, Streams, Cities
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/opendatasoft/sourcedatasetsdataset-idfilesfile-id-get-openapi.md
-- name: OpenDataSoft
-  x-api-slug: opendatasoft
-  description: OpenDataSoft is a cloud-based turnkey platform for data publishing
-    and API management. Its interface is intuitively designed to empower anyone, regardless
-    of technical skills, to upload easy-to-understand Open Data, or to even share
-    data within an admi...
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2716-opendatasoft.jpg
-  humanURL: http://opendatasoft.com
-  baseURL: https://public.opendatasoft.com//api/v2
-  tags: Files
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/opendatasoft/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://opencorporates.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://opendatasoft.stack.network
 - type: x-blog
   url: http://www.opendatasoft.com/category/news/
 - type: x-crunchbase

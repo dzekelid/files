@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Bitbucket
 x-complete: 1
@@ -64,4 +63,56 @@ paths:
       - ""
       - Files
       - Path
----
+  /repositories/{username}/{repo_slug}/downloads/{filename}:
+    delete:
+      summary: Delete Repositories Username Repo Slug Downloads Filename
+      description: Deletes the specified download artifact from the repository.
+      operationId: deleteRepositoriesUsernameRepoSlugDownloadsFilename
+      x-api-path-slug: repositoriesusernamerepo-slugdownloadsfilename-delete
+      responses:
+        200:
+          description: OK
+      tags:
+      - Repositories
+      - Username
+      - Repo
+      - Slug
+      - Downloads
+      - Filename
+    get:
+      summary: Get Repositories Username Repo Slug Downloads Filename
+      description: |-
+        Return a redirect to the contents of a download artifact.
+
+        This endpoint returns the actual file contents and not the artifact's
+        metadata.
+
+            $ curl -s -L https://api.bitbucket.org/2.0/repositories/evzijst/git-tests/downloads/hello.txt
+            Hello World
+      operationId: getRepositoriesUsernameRepoSlugDownloadsFilename
+      x-api-path-slug: repositoriesusernamerepo-slugdownloadsfilename-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Repositories
+      - Username
+      - Repo
+      - Slug
+      - Downloads
+      - Filename
+    parameters:
+      summary: Parameters Repositories Username Repo Slug Downloads Filename
+      description: Parameters repositories username repo slug downloads filename
+      operationId: parametersRepositoriesUsernameRepoSlugDownloadsFilename
+      x-api-path-slug: repositoriesusernamerepo-slugdownloadsfilename-parameters
+      responses:
+        200:
+          description: OK
+      tags:
+      - Repositories
+      - Username
+      - Repo
+      - Slug
+      - Downloads
+      - Filename

@@ -12,13 +12,13 @@ image: ""
 x-kinRank: "7"
 x-alexaRank: "0"
 tags: Files
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/open-science-framework/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Open Science Framework Retrieve a file
-  x-api-slug: open-science-framework
+- name: Open Science Framework - Retrieve a file
+  x-api-slug: filesfile-id-get
   description: |-
     Retrieves the details of a file (or folder)
     ####Returns
@@ -62,15 +62,15 @@ apis:
     To delete a file or folder send a DELETE request to the delete link. Nothing will be returned in the response body.
   image: ""
   humanURL: https://cos.io
-  baseURL: https://test-api.osf.io//v2//files/{file_id}/
-  tags: Files,File
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/open-science-framework/filesfile-id-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/open-science-framework/filesfile-id-get-openapi.md
-- name: Open Science Framework Update a file
-  x-api-slug: open-science-framework
+- name: Open Science Framework - Update a file
+  x-api-slug: filesfile-id-patch
   description: |-
     Updates the specified file by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
     #### Returns
@@ -79,13 +79,13 @@ apis:
     If the request is unsuccessful, JSON with an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.
   image: ""
   humanURL: https://cos.io
-  baseURL: https://test-api.osf.io//v2//files/{file_id}/
-  tags: Files,File
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/open-science-framework/filesfile-id-patch-openapi.md
-- name: Open Science Framework List all file versions
-  x-api-slug: open-science-framework
+- name: Open Science Framework - List all file versions
+  x-api-slug: filesfile-idversions-get
   description: |-
     A paginated list of all file versions.
     #### Returns
@@ -98,13 +98,13 @@ apis:
     If the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.
   image: ""
   humanURL: https://cos.io
-  baseURL: https://test-api.osf.io//v2//files/{file_id}/versions/
-  tags: Files,File,Versions
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/open-science-framework/filesfile-idversions-get-openapi.md
-- name: Open Science Framework Retrieve a file version
-  x-api-slug: open-science-framework
+- name: Open Science Framework - Retrieve a file version
+  x-api-slug: filesfile-idversionsversion-id-get
   description: |-
     Retrieves the details of a file version
     ####Returns
@@ -114,13 +114,13 @@ apis:
     If the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.
   image: ""
   humanURL: https://cos.io
-  baseURL: https://test-api.osf.io//v2//files/{file_id}/versions/{version_id}/
-  tags: Files,File,Versions,Version
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/open-science-framework/filesfile-idversionsversion-id-get-openapi.md
-- name: Open Science Framework List all storage providers
-  x-api-slug: open-science-framework
+- name: Open Science Framework - List all storage providers
+  x-api-slug: nodesnode-idfiles-get
   description: |-
     List of all storage providers that are configured for this node
 
@@ -137,13 +137,13 @@ apis:
     Note: In the OSF filesystem model, providers are treated as folders, but with special properties that distinguish them from regular folders. Every provider folder is considered a root folder, and may not be deleted through the regular file API.
   image: ""
   humanURL: https://cos.io
-  baseURL: https://test-api.osf.io//v2//nodes/{node_id}/files/
-  tags: Nodes,Node,Files
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/open-science-framework/nodesnode-idfiles-get-openapi.md
-- name: Open Science Framework Retrieve a storage provider
-  x-api-slug: open-science-framework
+- name: Open Science Framework - Retrieve a storage provider
+  x-api-slug: nodesnode-idfilesprovidersprovider-get
   description: |-
     Retrieves the details of a storage provider enabled on this node.
     ####Returns
@@ -152,13 +152,13 @@ apis:
     If the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.
   image: ""
   humanURL: https://cos.io
-  baseURL: https://test-api.osf.io//v2//nodes/{node_id}/files/providers/{provider}/
-  tags: Nodes,Node,Files,Providers,Provider
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/open-science-framework/nodesnode-idfilesprovidersprovider-get-openapi.md
-- name: Open Science Framework List all node files
-  x-api-slug: open-science-framework
+- name: Open Science Framework - List all node files
+  x-api-slug: nodesnode-idfilesprovider-get
   description: |-
     List of all the files/folders that are attached to your project for a given storage provider.
     ####Returns
@@ -209,13 +209,13 @@ apis:
     To delete a file or folder send a DELETE request to the delete link. Nothing will be returned in the response body.
   image: ""
   humanURL: https://cos.io
-  baseURL: https://test-api.osf.io//v2//nodes/{node_id}/files/{provider}/
-  tags: Nodes,Node,Files,Provider
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/open-science-framework/nodesnode-idfilesprovider-get-openapi.md
-- name: Open Science Framework Retrieve a file
-  x-api-slug: open-science-framework
+- name: Open Science Framework - Retrieve a file
+  x-api-slug: nodesnode-idfilesproviderpath-get
   description: |-
     Retrieves the details of a file attached to given node (project or component) for the given storage provider.
     ####Returns
@@ -224,13 +224,13 @@ apis:
     If the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.
   image: ""
   humanURL: https://cos.io
-  baseURL: https://test-api.osf.io//v2//nodes/{node_id}/files/{provider}/{path}/
-  tags: Nodes,Node,Files,Provider,Path
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/open-science-framework/nodesnode-idfilesproviderpath-get-openapi.md
-- name: Open Science Framework List all storage providers
-  x-api-slug: open-science-framework
+- name: Open Science Framework - List all storage providers
+  x-api-slug: registrationsregistration-idfiles-get
   description: |-
     A paginated list of storage providers enabled on the registration
 
@@ -247,13 +247,13 @@ apis:
     Note: In the OSF filesystem model, providers are treated as folders, but with special properties that distinguish them from regular folders. Every provider folder is considered a root folder, and may not be deleted through the regular file API.
   image: ""
   humanURL: https://cos.io
-  baseURL: https://test-api.osf.io//v2//registrations/{registration_id}/files/
-  tags: Registrations,Registration,Files
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/open-science-framework/registrationsregistration-idfiles-get-openapi.md
-- name: Open Science Framework List all files
-  x-api-slug: open-science-framework
+- name: Open Science Framework - List all files
+  x-api-slug: registrationsregistration-idfilesprovider-get
   description: |-
     List of all the registration's files/folders for a given storage provider.
 
@@ -272,13 +272,13 @@ apis:
     Files may be filtered by `id`, `name`, `node`, `kind`, `path`, `provider`, `size`, and `last_touched`.
   image: ""
   humanURL: https://cos.io
-  baseURL: https://test-api.osf.io//v2//registrations/{registration_id}/files/{provider}/
-  tags: Registrations,Registration,Files,Provider
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/open-science-framework/registrationsregistration-idfilesprovider-get-openapi.md
-- name: Open Science Framework Retrieve a file
-  x-api-slug: open-science-framework
+- name: Open Science Framework - Retrieve a file
+  x-api-slug: registrationsregistration-idfilesproviderpath-get
   description: |-
     Retrieves the details of a registration file for the given storage provider.
     ####Returns
@@ -287,31 +287,18 @@ apis:
     If the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.
   image: ""
   humanURL: https://cos.io
-  baseURL: https://test-api.osf.io//v2//registrations/{registration_id}/files/{provider}/{path}/
-  tags: Registrations,Registration,Files,Provider,Path
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/open-science-framework/registrationsregistration-idfilesproviderpath-get-openapi.md
-- name: Open Science Framework
-  x-api-slug: open-science-framework
-  description: OSF provides free and open source project management support for researchers
-    across the entire research lifecycle. As a collaboration tool, OSF helps researchers
-    work on projects privately with a limited number of collaborators and make parts
-    of their projects public, or make all the project publicly accessible for broader
-    dissemination. As a workflow system, OSF enables connections to the many services
-    researchers already use to streamline their process and increase efficiency. As
-    a flexible repository, it can store and archive research data, protocols, and
-    materials.
-  image: ""
-  humanURL: https://cos.io
-  baseURL: https://test-api.osf.io//v2
-  tags: Files
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/open-science-framework/openapi.md
 x-common:
 - type: x-website
   url: https://cos.io
+- type: x-api-gallery
+  url: http://open.fintech.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://open.science.framework.stack.network
 - type: x-github
   url: https://github.com/OSFramework
 - type: x-twitter

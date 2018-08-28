@@ -1,10 +1,9 @@
----
 swagger: "2.0"
 x-collection-name: 3scale
 x-complete: 1
 info:
-  title: 3Scale Account Management API
-  description: the-api-for-managing-3scale-accounts-
+  title: 3scale Service Management API
+  description: the-api-for-managing-3scale-services-
   termsOfService: http://www.3scale.net/terms-and-conditions/
   contact:
     name: 3Scale
@@ -36,4 +35,3 @@ paths:
       - Nginx
       - Configuration
       - Files
----

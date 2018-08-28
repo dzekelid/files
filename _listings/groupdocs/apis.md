@@ -1,24 +1,16 @@
 ---
 name: GroupDocs
-description: GroupDocs is a web-based service for online document sharing, collaboration
-  and management. You can easily and securely upload, convert, view, sign and compare
-  any document format (PDF, DOC, DOCX, XLS, PPT, PPTX and many more) with your colleagues
-  and business partners in the realtime without the need to install any software.
-  All the typical file management operations like managing Folders, Copy, Move and
-  Delete are supported.
-image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1066_logo.png
+x-slug: groupdocs
+description: GroupDocs offers .NET/Java libraries and cloud APIs that let you view,
+  compare, annotate, sign and convert over 45 common document formats in your own
+  app.
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1066-groupdocs.jpg
 x-kinRank: "8"
-x-alexaRank: ""
-tags:
-- Target
-- Stack Network
-- Notifications
-- Files
-- Documents
-- Documents
-created: "2018-03-10"
-modified: "2018-03-10"
-url: https://raw.githubusercontent.com/streamdata-gallery/files/master/_listings/groupdocs/apis.yaml
+x-alexaRank: "543000"
+tags: Files
+created: "2018-08-27"
+modified: "2018-08-27"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/files/master/_listings/groupdocs/apis.md
 specificationVersion: "0.14"
 apis: []
 x-common:
@@ -28,6 +20,8 @@ x-common:
   url: http://groupdocs.com/blog/feed
 - type: x-crunchbase
   url: http://www.crunchbase.com/company/groupdocs
+- type: x-crunchbase
+  url: https://crunchbase.com/organization/groupdocs
 - type: x-developer
   url: http://groupdocs.com/developer/api
 - type: x-documentation
